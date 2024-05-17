@@ -1,74 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dahee Lee</title>
-    
+
     <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css">
-    
+
     <!-- fonts -->
     <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
-
-
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap" rel="stylesheet">
     <script src="/js/app.js" charset="UTF-8"></script>
 </head>
 <body>
-    <!-- Header -->
-    <header class="headerBanner">
+    <!----------- Header -------------->
+    <header class="header">
         <div id="headerName">
-            <p>Dahee Lee</p>
+            <p><a href="index.html">( DAHEE LEE )</a></p>
         </div>
-        <div id="headerNav">
-            <ul class="headerNav">
-                <li>
-                    Contact
-                </li>
-                <li>
-                    About
-                </li>
-            </ul>
+        <div class="headerNav">
+            <a class="headerNavItem">About</a>
+            <a class="headerNavItem">Contact</a>
         </div>
     </header>
-    
+
     <!-- Intro Section -->
-    <div class="about">
-        <p id="aboutText">
-            Creative fullstack software engineer obsessed with design and clean code.
-        </p>
+    <div class="intro">
+        <h1 class="introName">Dahee Lee</h1>
 
-        <p>
-            My comfort zone lies in frontend frameworks like React and OOP.
+        <p id="nameDef">* / dahi / <span id="nameKorean"> 다희 </span></p>
 
-            I have excellent teamwork abilities and an entrepreneurial spirit - balancing both business and product needs.
-        </p>
+        <div class="introBlurb">
+            <!-- <i>
+                Noun:
+            </i> -->
+            <p>
+                Creative fullstack software engineer obsessed with design and clean code.
+            </p>
+
+            <p>
+                My comfort zone lies in frontend frameworks like React and OOP.
+
+                I have excellent teamwork abilities and an entrepreneurial spirit - balancing both business and product
+                needs.
+            </p>
+        </div>
+        <div class="introButtons">
+            <button class="keyboardButton">
+                <a href="#projectsDiv">
+                    WORK
+                </a>
+            </button>
+            <button class="keyboardButton">
+                <a href="/html/about.html">
+                    ABOUT
+                </a>
+            </button>
+        </div>
     </div>
 
-        <!-- Project Section -->
-    <div class="projectDiv">
-        <div>
-            <p>
+    <!-- Project Section -->
+    <div id="projectsDiv">
+
+        <div class="project">    
+            <h1>
                 Retrosquares
-            </p>
+            </h1>
             <p>
-                React | AWS | Express.js
+                React | AWS | MySQL | Express.js
             </p>
+            <div class="projectImg">
+                <img src="./assets/1.png">
+            </div>
+        </div>
+
+        <div class="project">    
+            <h1>
+                Places
+            </h1>
             <p>
-                This project...
+                React | PostgreSQL | Express.js
             </p>
+            <div class="projectImg">
+                <img src="./assets/2.png">
+            </div>
         </div>
-        <div>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+ 
+        <div class="project">    
+            <h1>
+                Pens
+            </h1>
+            <p>
+                React | MongoDB | Express.js
+            </p>
+            <div class="projectImg">
+                <img src="./assets/3.png">
+            </div>
         </div>
+
+        <div class="project">    
+            <h1>
+                Good Start App
+            </h1>
+            <p>
+                HTML | CSS | JavaScript
+            </p>
+            <div class="projectImg">
+                <img src="./assets/4.png">
+            </div>
+        </div>
+
+
     </div>
 
+    <!-- Footer -->
     <footer>
-        Footer
+        Dahee Lee 
+        <div>
+            email
+            linkedin
+            Contact
+        </div>
     </footer>
 
 
 </body>
+
 </html>
