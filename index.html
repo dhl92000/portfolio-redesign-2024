@@ -16,9 +16,19 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap" rel="stylesheet">
     <script src="/js/app.js" charset="UTF-8"></script>
+
+    <!-- icons -->
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <!-- email icon -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
 </head>
+
 <body>
-    <!----------- Header -------------->
+    <!-- ------------- -->
+    <!----- Header ---->
+    <!-- ------------- -->
     <header class="header">
         <div id="headerName">
             <p><a href="index.html">( DAHEE LEE )</a></p>
@@ -28,104 +38,209 @@
             <a class="headerNavItem">Contact</a>
         </div>
     </header>
-
+    <!-- ------------- -->
     <!-- Intro Section -->
+    <!-- ------------- -->
     <div class="intro">
-        <h1 class="introName">Dahee Lee</h1>
+        <div class="introTextDiv">
+            <p class="introName">Dahee Lee</p>
 
-        <p id="nameDef">* / dahi / <span id="nameKorean"> 다희 </span></p>
+            <p id="nameDef"> &#10059; <em>noun</em> / dahi / <span id="nameKorean"> 다희 </span></p>
 
-        <div class="introBlurb">
-            <!-- <i>
-                Noun:
-            </i> -->
-            <p>
-                Creative fullstack software engineer obsessed with design and clean code.
-            </p>
+            <div class="introBlurb">
+                <p>
+                    Creative fullstack software engineer obsessed with clean designs and clean code.
+                </p>
 
-            <p>
-                My comfort zone lies in frontend frameworks like React and OOP.
+                <p>
+                    My comfort zone lies in frontend frameworks like React and OOP.
 
-                I have excellent teamwork abilities and an entrepreneurial spirit - balancing both business and product
-                needs.
-            </p>
-        </div>
-        <div class="introButtons">
-            <button class="keyboardButton">
-                <a href="#projectsDiv">
-                    WORK
-                </a>
-            </button>
-            <button class="keyboardButton">
-                <a href="/html/about.html">
-                    ABOUT
-                </a>
-            </button>
-        </div>
-    </div>
-
-    <!-- Project Section -->
-    <div id="projectsDiv">
-
-        <div class="project">    
-            <h1>
-                Retrosquares
-            </h1>
-            <p>
-                React | AWS | MySQL | Express.js
-            </p>
-            <div class="projectImg">
-                <img src="./assets/1.png">
+                    I have excellent teamwork abilities and an entrepreneurial spirit - balancing both business and
+                    product
+                    needs.
+                </p>
             </div>
-        </div>
-
-        <div class="project">    
-            <h1>
-                Places
-            </h1>
-            <p>
-                React | PostgreSQL | Express.js
-            </p>
-            <div class="projectImg">
-                <img src="./assets/2.png">
+            <div class="introButtons">
+                <button class="keyboardButton">
+                    <a href="#projectsDiv">
+                        WORK
+                    </a>
+                </button>
+                <button class="keyboardButton">
+                    <a href="/html/about.html">
+                        ABOUT
+                    </a>
+                </button>
             </div>
-        </div>
- 
-        <div class="project">    
-            <h1>
-                Pens
-            </h1>
-            <p>
-                React | MongoDB | Express.js
-            </p>
-            <div class="projectImg">
-                <img src="./assets/3.png">
-            </div>
-        </div>
 
-        <div class="project">    
-            <h1>
-                Good Start App
-            </h1>
-            <p>
-                HTML | CSS | JavaScript
-            </p>
-            <div class="projectImg">
-                <img src="./assets/4.png">
-            </div>
-        </div>
 
+        </div>
+        <div class="introImageDiv">
+            <img class="introImage" src="./assets/IMG_1290.jpg" alt="Profile picture of Dahee">
+        </div>
 
     </div>
+    <!-- -------------- -->
+    <!-- Skills Section  -->
+    <!-- -------------- -->
 
-    <!-- Footer -->
-    <footer>
-        Dahee Lee 
+    <div class="skillsSection">
         <div>
-            email
-            linkedin
-            Contact
+            <h1>Skills</h1>
         </div>
+
+        <div class="skills">
+            <div class="skillsDiv">
+                <p>
+                    Languages
+                </p>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>TypeScript</li>
+                    <li>Python</li>
+                </ul>
+            </div>
+            <div class="skillsDiv">
+                <p>
+                    Libraries, frameworks
+                </p>
+                <ul>
+                    <li>ExpressJS</li>
+                    <li>Django</li>
+                    <li>React</li>
+                    <li>Tailwind CSS</li>
+                </ul>
+            </div>
+
+            <div class="skillsDiv">
+                <p>
+                    Technologies
+                </p>
+
+                <ul>
+                    <li>AWS</li>
+                    <li>Github</li>
+                    <li>Heroku</li>
+                    <li>MongoDB</li>
+                    <li>MySQL</li>
+                    <li>Netlify</li>
+                    <li>PostgreSQL</li>
+                </ul>
+            </div>
+
+            <div class="skillsDiv">
+                <p>
+                    Soft Skills
+                </p>
+                <ul>
+                    <li>Collaboration</li>
+                    <li>Conflict-resolution</li>
+                    <li>Effective Communication</li>
+                </ul>    
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <!-- --------------- -->
+    <!-- Project Section -->
+    <!-- --------------- -->
+    <div class="projectLayout">
+        <div class="projectsHeader">
+            <h1>Work</h1>
+        </div>
+        <div id="projectsDiv">
+            <div class="project" id="retrosquares">
+                <a href="/html/retrosquares.html">
+                    <p class="projectTitle">
+                        Retrosquares
+                    </p>
+                    <p>
+                        React | AWS | MySQL | Express.js
+                    </p>
+                    <div class="projectImg">
+                        <img src="./assets/1.png">
+                    </div>
+                </a>
+            </div>
+            <div class="project" id="places">
+                <p class="projectTitle">
+                    Places
+                </p>
+                <p>
+                    React | PostgreSQL | Express.js
+                </p>
+                <div class="projectImg">
+                    <img src="./assets/2.png">
+                </div>
+            </div>
+            <div class="project" id="goodstart">
+                <p class="projectTitle">
+                    Good Start App
+                </p>
+                <p>
+                    HTML | CSS | JavaScript
+                </p>
+                <div class="projectImg">
+                    <img src="./assets/Untitled design.png">
+                </div>
+            </div>
+            <div class="project" id="pens">
+                <p class="projectTitle">
+                    Pens
+                </p>
+                <p>
+                    React | MongoDB | Express.js
+                </p>
+                <div class="projectImg">
+                    <img src="./assets/3.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------- -->
+    <!-- Footer -->
+    <!-- ------------- -->
+    <footer>
+        <div class="footerLeft">
+
+            <p>Want to work together?</p>
+            <p>Feel free to connect with me on my socials</p>
+
+        </div>
+
+        <div class="footerRight">
+            <!-- <span class="material-symbols-outlined">
+                mail
+            </span>
+
+            <a href="https://www.linkedin.com/in/daheelee/">
+                <i class="devicon-linkedin-plain"></i>
+            </a>
+
+            <a href="https://github.com/dhl92000">
+                <i class="devicon-github-original"></i>
+            </a> -->
+            <a href="https://github.com/dhl92000">
+                <p>Github</p>
+            </a>
+
+            <a href="https://www.linkedin.com/in/daheelee/">
+                <p>LinkedIn</p>
+            </a>
+
+            <a>
+                <p>Contact</p>
+            </a>
+
+
+        </div>
+
     </footer>
 
 
