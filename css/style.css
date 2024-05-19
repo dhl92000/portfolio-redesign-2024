@@ -56,7 +56,9 @@ li {
     font-family: "DM Serif Display", serif;
     font-style: italic;
 }
-
+.skills{
+    color: rgb(163, 163, 163);
+}
 
 /* -------Projects------- */
 .projectsHeader {
@@ -66,7 +68,9 @@ li {
 }
 
 /* Single project */
-
+.projectTitle{
+    font-weight: bold;
+}
 
 
 
@@ -158,7 +162,6 @@ li {
         margin: auto;
     }
 
-
     .keyboardButton {
         font-family: "Poppins", sans-serif;
         font-size: 14px;
@@ -220,6 +223,17 @@ li {
         padding: 0;
         line-height: 1.8;
     }
+    .skillsDiv li{
+        padding: 0;
+    }
+
+    @keyframes greentext {
+        100%{
+            color: #0E8D44;
+        }
+        
+    }
+    
 
     /* Project section */
     /* #projectsDiv {
@@ -270,26 +284,27 @@ li {
         object-fit: cover;
     } */
 
+    /* Layout title and projects div */
     .projectLayout {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         width: 70vw;
-        height: 100vh;
+        /* height: 100vh; */
         margin: auto;
     }
 
     .projectsHeader h1 {
         font-size: 50px;
-        letter-spacing: 0.5rem;
     }
 
     #projectsDiv {
-        width: 75vw;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        row-gap: 10px;
+        row-gap: 3em;
+        column-gap: 3em;
+
     }
 
     #projectsDiv a {
@@ -302,24 +317,20 @@ li {
     }
 
     .project {
-        height: 55vh;
-        margin: 20px;
         cursor: pointer;
     }
 
-    /* .project:hover {
+    .project:hover {
         transform: translate(-2px, -2px);
         filter: drop-shadow(5px 10px 8px #cacacf);
-    } */
+    }
 
     .projectTitle {
-
         font-size: xx-large;
-        letter-spacing: 0.1rem;
     }
 
     .projectImg {
-        height: 40vh;
+        height: 50vh;
     }
 
     .projectImg img {
