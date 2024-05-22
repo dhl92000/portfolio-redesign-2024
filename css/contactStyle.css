@@ -1,7 +1,6 @@
 body {
     font-family: "Poppins", sans-serif;
     background-color: #fcfcfc;
-
 }
 
 header {
@@ -20,41 +19,84 @@ header {
 .contactCard {
     width: 70vw;
     margin: auto;
-    background-color: peachpuff;
-    border-radius: 15px;
 }
 
+.contactText{
+    border-left: #0E8D44 2px dotted;
+    padding-left: 10px;
+    font-size: 1.5rem;
+    padding: 30px;
+}
 .contactItemsDiv {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}       
+}
+.contactItems{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.contactItems i {
+    font-size: 1.5rem;
+}
+.contactItems a{
+    text-decoration: none;
+    color: black;
+}
 
-@media(min-width:801px) {
+/* ------- TABLETS --------- */
+@media (min-width:820px) {
     .contactCard {
-        width: 50vw;
+        width: 60vw;
         margin: auto;
         padding: 10px;
-        background-color: peachpuff;
-        border-radius: 15px;
-        padding: 30px;
+    }
+}
+
+/* ------- DESKTOP --------- */
+@media(min-width:961px) {
+    .contactCard {
+        width: 40vw;
+        margin: auto;
+        padding: 10px;
     }
 
-    .contactCardLayout{
+    .contactCardLayout {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
+    }
+
+    .contactText {
+        font-size: 2rem;
+        border-left: #0E8D44 2px dotted;
+        padding-left: 30px;
+        line-height: 1.6;
+    }
+
+    .contactCard h1{
+        font-size: 50px;
     }
 
     .contactItems {
         display: flex;
         flex-direction: row;
         align-items: center;
-
     }
+
     .contactItems p {
         margin: 10px;
+    }
+
+    .contactItems a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .contactItems i {
+        font-size: 2rem;
     }
 }
