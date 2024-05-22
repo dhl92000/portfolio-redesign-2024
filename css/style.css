@@ -34,8 +34,10 @@ li {
 
 .introName {
     color: #0E8D44;
-    font-family: "DM Serif Display", serif;
-    font-style: italic;
+    font-weight: bold;
+    
+    /* font-family: "DM Serif Display", serif; */
+
 }
 
 #nameKorean {
@@ -52,9 +54,9 @@ li {
 
 /* -------Skills-------- */
 .skillsSection h1 {
-    color: #0E8D44;
-    font-family: "DM Serif Display", serif;
-    font-style: italic;
+    /* color: #0E8D44; */
+    /* font-family: "DM Serif Display", serif; */
+    /* font-style: italic; */
 }
 .skills{
     color: rgb(163, 163, 163);
@@ -62,9 +64,9 @@ li {
 
 /* -------Projects------- */
 .projectsHeader {
-    color: #0E8D44;
-    font-family: "DM Serif Display", serif;
-    font-style: italic;
+    /* color: #0E8D44; */
+    /* font-family: "DM Serif Display", serif; */
+    /* font-style: italic; */
 }
 
 /* Single project */
@@ -204,7 +206,7 @@ li {
 
     .skillsSection h1 {
         font-size: 50px;
-        letter-spacing: 0.5rem;
+        letter-spacing: 0.25rem;
     }
 
     .skills {
@@ -296,6 +298,7 @@ li {
 
     .projectsHeader h1 {
         font-size: 50px;
+        letter-spacing: 0.25rem;
     }
 
     #projectsDiv {
