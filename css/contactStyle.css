@@ -1,0 +1,60 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #fcfcfc;
+
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #0E8D44;
+    text-decoration: none;
+}
+
+#headerName a {
+    text-decoration: none;
+    color: #0E8D44;
+}
+
+.contactCard {
+    width: 70vw;
+    margin: auto;
+    background-color: peachpuff;
+    border-radius: 15px;
+}
+
+.contactItemsDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}       
+
+@media(min-width:801px) {
+    .contactCard {
+        width: 50vw;
+        margin: auto;
+        padding: 10px;
+        background-color: peachpuff;
+        border-radius: 15px;
+        padding: 30px;
+    }
+
+    .contactCardLayout{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .contactItems {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+    }
+    .contactItems p {
+        margin: 10px;
+    }
+}

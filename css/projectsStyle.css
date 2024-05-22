@@ -1,0 +1,25 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #fcfcfc;
+}
+
+#headerImage{
+    position: absolute;
+    width: 100vw;
+    height: 40vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+#headerImage img{
+    position: relative;
+}
+
+#headerTitle{
+    z-index: 5;
+}
+
+

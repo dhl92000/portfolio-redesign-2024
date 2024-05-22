@@ -34,12 +34,11 @@ li {
 
 .introName {
     color: #0E8D44;
-    font-weight: bold;
-    
     /* font-family: "DM Serif Display", serif; */
-
 }
-
+#nameDef{
+    margin: 0;
+}
 #nameKorean {
     font-family: "Gothic A1", sans-serif;
     font-weight: 600;
