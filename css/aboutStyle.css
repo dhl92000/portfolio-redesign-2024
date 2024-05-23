@@ -15,7 +15,10 @@ header {
     text-decoration: none;
     color: #0E8D44;
 }
-
+.headerNav a {
+    text-decoration: none;
+    color: #0E8D44;
+}
 
 .timelineItem {
     display: flex;
@@ -102,5 +105,31 @@ header {
         width: 30vw;
 
     }
+    /* Footer */
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 50px;
+        height: 10vh;
+    }
 
+    .footerLeft h1 {
+        letter-spacing: 0.5rem;
+        color: #0E8D44;
+    }
+
+    .footerLeft p {
+        margin: 0;
+    }
+
+    .footerRight p {
+        display: inline;
+        padding: 10px;
+    }
+    
+    .footerRight a{
+        text-decoration: none;
+        color: black;
+    }
 }

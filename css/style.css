@@ -17,6 +17,11 @@ header {
     color: #0E8D44;
 }
 
+.headerNav a {
+    text-decoration: none;
+    color: #0E8D44;
+}
+
 li {
     padding: 0 5px;
 }
@@ -36,9 +41,11 @@ li {
     color: #0E8D44;
     /* font-family: "DM Serif Display", serif; */
 }
-#nameDef{
+
+#nameDef {
     margin: 0;
 }
+
 #nameKorean {
     font-family: "Gothic A1", sans-serif;
     font-weight: 600;
@@ -57,7 +64,8 @@ li {
     /* font-family: "DM Serif Display", serif; */
     /* font-style: italic; */
 }
-.skills{
+
+.skills {
     color: rgb(163, 163, 163);
 }
 
@@ -69,7 +77,7 @@ li {
 }
 
 /* Single project */
-.projectTitle{
+.projectTitle {
     font-weight: bold;
 }
 
@@ -224,17 +232,18 @@ li {
         padding: 0;
         line-height: 1.8;
     }
-    .skillsDiv li{
+
+    .skillsDiv li {
         padding: 0;
     }
 
     @keyframes greentext {
-        100%{
+        100% {
             color: #0E8D44;
         }
-        
+
     }
-    
+
 
     /* Project section */
     /* #projectsDiv {
@@ -346,7 +355,9 @@ li {
     footer {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         margin: 50px;
+        height: 10vh;
     }
 
     .footerLeft h1 {
@@ -361,6 +372,11 @@ li {
     .footerRight p {
         display: inline;
         padding: 10px;
+    }
+    
+    .footerRight a{
+        text-decoration: none;
+        color: black;
     }
 }
 

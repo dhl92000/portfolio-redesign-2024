@@ -3,23 +3,125 @@ body {
     background-color: #fcfcfc;
 }
 
-#headerImage{
-    position: absolute;
-    width: 100vw;
-    height: 40vh;
-    overflow: hidden;
+/* --------Header--------- */
+header {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #0E8D44;
+    text-decoration: none;
 }
 
-#headerImage img{
-    position: relative;
+#headerName a {
+    text-decoration: none;
+    color: #0E8D44;
 }
 
-#headerTitle{
-    z-index: 5;
+.headerNav a {
+    text-decoration: none;
+    color: #0E8D44;
+}
+
+li {
+    padding: 0 5px;
+}
+
+.projectDiv {
+    width: 70vw;
+    margin: auto;
 }
 
 
+#projectImage img {
+    width: 100%;
+}
+
+.projectSummary {
+    margin: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.projectDescription p {
+    text-align: justify;
+}
+
+.projectSummary ul {
+    list-style: none;
+    font-weight: 600;
+    padding: 0;
+}
+
+/* ------- TABLETS --------- */
+@media (min-width:820px) {
+    /* .contactCard {
+        width: 60vw;
+        margin: auto;
+        padding: 10px;
+    } */
+}
+
+/* ------- DESKTOP --------- */
+@media(min-width:961px) {
+    header {
+        position: fixed;
+        top: 0;
+        width: 90vw;
+        z-index: 6;
+        margin-left: 30px;
+        margin-top: 20px;
+    }
+
+    .projectDiv h1 {
+        font-size: 50px;
+
+    }
+
+    .projectBlurb {
+        font-size: 1.5em;
+    }
+
+    .projectText {
+        display: flex;
+        gap: 30px;
+    }
+
+    .projectSummary {
+        border: #0E8D44 1px solid;
+        width: 40vw;
+        height: fit-content;
+        padding: 10px;
+    }
+
+    /* Footer */
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 50px;
+        height: 10vh;
+    }
+
+    .footerLeft h1 {
+        letter-spacing: 0.5rem;
+        color: #0E8D44;
+    }
+
+    .footerLeft p {
+        margin: 0;
+    }
+
+    .footerRight p {
+        display: inline;
+        padding: 10px;
+    }
+
+    .footerRight a {
+        text-decoration: none;
+        color: black;
+    }
+
+}
